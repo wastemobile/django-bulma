@@ -33,12 +33,12 @@ A Django base theme based on Bulma ([bulma.io](https://bulma.io/)). Bulma is a m
   
 4. If you want to customize bulma sass and your own components:
 
-    4.1 Copy bulma static files into your project's **STATIC_ROOT**:
+    4.1 Copy bulma static files into your project's **STATICFILES_DIRS**:
 
     ```
     python manage.py copy_bulma_static_into_project
     ```  
-    You should see **bulma** dir appeared in your **STATIC_ROOT**. It contains
+    You should see **bulma** dir appeared in your **STATICFILES_DIRS**. It contains
     two dirs:
     * **sass** - this is the place where you can put your own sass code and customize
     bulma variables
