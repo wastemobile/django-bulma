@@ -16,7 +16,7 @@
     "rimraf": "^3.0.0"
   },
   "license": "MIT",
-  "main": "style.sass",
+  "main": "style.scss",
   "style": "../css/style.min.css",
   "name": "django_bulma",
   "scripts": {
@@ -24,7 +24,7 @@
     "build-autoprefix": "postcss --use autoprefixer --map false --output ../css/style.css ../css/style.css",
     "build-cleancss": "cleancss -o ../css/style.min.css ../css/style.css",
     "build-clean": "rimraf css",
-    "build-sass": "node-sass --output-style expanded --source-map true style.sass ../css/style.css",
+    "build-sass": "node-sass --output-style expanded --source-map true style.scss ../css/style.css",
     "deploy": "npm run build",
     "start": "npm run build-sass -- --watch"
   }
